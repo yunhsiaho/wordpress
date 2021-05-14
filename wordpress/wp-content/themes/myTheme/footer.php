@@ -1,2 +1,4 @@
-<?php
-echo"HI!";
+<?php 
+get_header(); 
+
+
