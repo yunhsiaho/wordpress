@@ -1,9 +1,5 @@
 <?php get_header(); ?>
 
-<?php the_title(); ?>
-<?php the_content(); ?>
-<?php get_header(); ?>
-
 <div class="container">
 <h1><?php the_title(); ?></h1>
 
