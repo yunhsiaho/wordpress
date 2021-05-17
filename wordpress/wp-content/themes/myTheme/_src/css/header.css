@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: right; }
+  .row .dev-title {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 800;
+    font-size: 1.5rem; }
+    .row .dev-title a {
+      color: black;
+      text-decoration: none; }
+      .row .dev-title a :hover {
+        color: black;
+        text-decoration: none; }
+  .row .menu-mymenu-container {
+    width: 70%; }
+    .row .menu-mymenu-container .my-nav {
+      margin: 3rem;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: right; }
+      .row .menu-mymenu-container .my-nav li {
+        margin: 1rem; }
+        .row .menu-mymenu-container .my-nav li a {
+          color: black;
+          text-decoration: none; }
+          .row .menu-mymenu-container .my-nav li a :hover {
+            color: black;
+            text-decoration: none; }
+
+/*# sourceMappingURL=header.css.map */

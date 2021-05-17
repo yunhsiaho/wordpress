@@ -22,7 +22,7 @@
 <div class="dev restaurant">
     <div class="shapeDivider mb-5"><?php dynamic_sidebar('footer-area-divider');?></div>
     <div class="row p-5 bg-dark text-white">
-      <div class="col-md-4 p-5">
+      <div class="col-md-6 p-2">
         <h3 class="text-left h1">Dev Restaurant</h3>
         <p class="text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium rerum repellendus obcaecati eum magni impedit, alias.</p>
       </div>
@@ -51,10 +51,10 @@
             <h5 class="h5">Open hours</h5>
             <div class="gridHr">
               <div class="d-flex align-items-center mr-2"><img class="logoFooter" src="" alt=""></div>
-              <div class="weekdays">Mondays   ---------------------       closed</div>               
-              <div class="weekdays">Tue - Fri -----------------------     10am-12am</div> 
-              <div class="weekdays">Sat - Sun ---------------------- 7am-1am</div> 
-              <div class="weekdays">Public Holidays  ------------ 7am-1am</div> 
+              <div class="weekdays">Mondays   -------------closed</div>               
+              <div class="weekdays">Tue - Fri -------------10am-12am</div> 
+              <div class="weekdays">Sat - Sun -------------7am-1am</div> 
+              <div class="weekdays">Public Holidays  ------7am-1am</div> 
               <!-- <div class="middle"><hr></div> -->
               <div class="rightSide"><?php the_field('monday', 'options');?></div>
           </div>
