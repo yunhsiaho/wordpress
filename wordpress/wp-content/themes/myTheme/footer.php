@@ -51,10 +51,10 @@
             <h5 class="h5">Open hours</h5>
             <div class="gridHr">
               <div class="d-flex align-items-center mr-2"><img class="logoFooter" src="" alt=""></div>
-              <div class="weekdays">Mondays   -------------closed</div>               
-              <div class="weekdays">Tue - Fri -------------10am-12am</div> 
+              <div class="weekdays">Mondays   -------------Closed</div>               
+              <div class="weekdays">Tue - Fri --------------10am-12am</div> 
               <div class="weekdays">Sat - Sun -------------7am-1am</div> 
-              <div class="weekdays">Public Holidays  ------7am-1am</div> 
+              <div class="weekdays">Public Holidays  --------7am-1am</div> 
               <!-- <div class="middle"><hr></div> -->
               <div class="rightSide"><?php the_field('monday', 'options');?></div>
           </div>
