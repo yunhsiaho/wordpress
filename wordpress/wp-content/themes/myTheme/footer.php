@@ -46,7 +46,7 @@
     </div>
       <!-- END OF THE ICONS ROW -->
     <div class="opening-hours">
-        <div class="row p-5 bg-dark text-white">
+        <div class="row p-5 d-flex bg-dark text-white">
         <div class="col-md-4 p-5">
             <h5 class="h5">Open hours</h5>
             <div class="gridHr">
@@ -58,12 +58,17 @@
               <!-- <div class="middle"><hr></div> -->
               <div class="rightSide"><?php the_field('monday', 'options');?></div>
           </div>
-        </div>   
-      <div class="col-md-8 d-flex justify-content-center align-items-center"> 
-      <h5 class="h5">Contact us</h5>
+        </div> 
+        <div class="col-md-8 mt-5 justify-content-center align-items-center">
+        <div class="row w-100 ml-5 justify-content-center">
+        <h5 class="h5">Contact us</h5>
+          </div>
+          <div class="row w-100 mt-2 justify-content-center">
+            <!-- <button type="button" class=" w-25 bg-white text-dark subscribe-btn">SUBSCRIBE</button> -->
       </div>
-      <div class="row w-100 mt-0 justify-content-center">
-      </div>
+      </div> 
+      <!-- <div class="row w-100 mt-0 justify-content-center">
+      </div> -->
     </div>
   </div>   
 </body>
