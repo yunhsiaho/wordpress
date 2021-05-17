@@ -20,7 +20,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="dev-title">
-                DEV RESTAURANT
+                <a href="http://localhost">DEV RESTAURANT</a>
             </div>
             <?php
             wp_nav_menu( array(
