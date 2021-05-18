@@ -2,14 +2,25 @@
   font-family: 'Poppins', sans-serif;
   color: white; }
   * .banner {
-    position: relative;
     text-align: left;
     color: white;
-    z-index: 1; }
+    position: relative;
+    background-color: none;
+    border: 3px solid yellow; }
+    * .banner img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    * .banner .banner-row {
+      border: 3px solid lightgreen;
+      width: 80%;
+      z-index: 1;
+      margin-left: auto;
+      margin-right: auto; }
     * .banner .banner-text {
       font-size: 5rem;
-      margin-top: 1rem;
-      margin-left: 17rem;
+      border: 3px solid white;
       width: 100%;
       height: 100%; }
       * .banner .banner-text .for-happy-day {
@@ -33,11 +44,6 @@
           background-color: white;
           border-radius: 30px;
           text-decoration: none; }
-    * .banner img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1; }
   * .block-1 {
     display: flex;
     flex-direction: column;

@@ -13,21 +13,20 @@
 </head>
 
 <body <?php body_class(); ?> >
-    <!-- <h1><?php bloginfo('name'); ?></h1> 
-    <h1><?php echo "test"; ?></h1>  -->
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="dev-title">
+    <div class="container-fluid header-top">
+        <div class="row header-row">
+            <div class="dev-title col-4">
                 <a href="http://localhost"><?php bloginfo('name'); ?></a>
-                
             </div>
-            <?php
-            wp_nav_menu( array(
-                'theme_location' => 'menu-header-1',
-                'menu_class' => 'my-nav'
-            ) );
-            ?>
+            <div class="col-8">
+                <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'menu-header-1',
+                    'menu_class' => 'my-nav'
+                ) );
+                ?>
+            </div>
         </div>
     </div>
 </header>

@@ -5,18 +5,18 @@
     $menuLink = get_field('check_our_menu');
     $checkMenuText = get_field('check_menu_text');
 ?>
-<div class="container-fluid banner "> 
-<?php get_header(); ?>       
-        <img src=<?php echo $background ?> class="backgound-image img-fluid "/>
+<div class="container-fluid banner"> 
+    <img src=<?php echo $background ?> class="backgound-image img-fluid "/>
+    <div class="row banner-row">
+    <?php get_header(); ?>       
     <div class="banner-text">
         <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
         <?php echo $text ?>
         <div class="check-our-menu">
             ―― <a href="<?php echo $menuLink ?>"><?php echo $checkMenuText ?></a>
         </div>
-    </div> 
-    
-    
+    </div>
+    </div>
 </div>
     <section>
         <div class="container-fluid">
