@@ -1,11 +1,10 @@
 <?php wp_footer();
 ?> 
 <!-- ROW NEWSLETTER -->
-<div class="newsletter">
-    <!-- <div class="shapeDivider mb-5"><?php dynamic_sidebar('footer-area-divider');?></div> -->
+<div class="newsletter bg-dark">
     <div class="row p-5 bg-dark text-white">
-      <div class="col-md-4 p-5">
-        <h3 class="h1 p-2">Join Our Newsletter</h3>
+      <div class="col-md-4  p-5">  
+        <h3 class="joinNews p-2">Join Our Newsletter</h3>
       </div>
       <div class="col-md-8 mt-5 justify-content-center align-items-center">
         <div class="row w-100 ml-5 justify-content-center">
@@ -20,7 +19,7 @@
  <!-- END OF ROW NEWSLETTER --> 
   <!-- ROW DEV RESTAURANT --> 
 <div class="dev restaurant">
-    <div class="shapeDivider mb-5"><?php dynamic_sidebar('footer-area-divider');?></div>
+    <!-- <div class="shapeDivider mb-5"><?php dynamic_sidebar('footer-area-divider');?></div> -->
     <div class="row p-5 bg-dark text-white">
       <div class="col-md-4 p-5">
         <h3 class="text-left h1">Dev Restaurant</h3>
