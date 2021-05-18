@@ -3,8 +3,8 @@
 <!-- ROW NEWSLETTER -->
 <div class="upnewsletter">
   <div class="row p-5">
-    <div class="col-md-4 p5">
-      
+    <div class="col-md-12 p5">
+    <p>ici se trouve l'image avec hachures qui superpose le joinNewslter</p>
     </div>
   </div>
 </div>
@@ -28,9 +28,11 @@
 <div class="dev restaurant">
     <!-- <div class="shapeDivider mb-5"><?php dynamic_sidebar('footer-area-divider');?></div> -->
     <div class="row p-5 bg-dark text-white">
-      <div class="col-md-4 p-5">
+      <div class="col-md-6 p-5">
         <h3 class="text-left h1">Dev Restaurant</h3>
+        <div class="col-md-6">
         <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium rerum repellendus obcaecati eum magni impedit, alias.</p>
+      </div>
       </div>
     <!-- ICONS ROW -->
       <div class="col-md-6 ml-5 d-flex justify-content-center align-items-center">

@@ -23,7 +23,8 @@ Text Domain: Team Pomodoro
 }
 .upnewsletter{
   background-image: url('/wordpress/wp-content/themes/myTheme/assets/images/hachures-noires.png');
-  position: absolute;
+  width: 500px;
+  height: auto;
 }
 .newsletter{
     margin: 0em 7em 0 7em;
