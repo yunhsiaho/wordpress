@@ -2,7 +2,8 @@
     $text = get_field('title_text'); 
     $image = get_field('background-image');
     $background = $image['sizes']['2048x2048'];
-    $checkMenu = get_field('check-our-menu');
+    $menuLink = get_field('check_our_menu');
+    $checkMenuText = get_field('check_menu_text');
 ?>
 <div class="container-fluid banner "> 
 <?php get_header(); ?>       
@@ -11,7 +12,7 @@
         <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
         <?php echo $text ?>
         <div class="check-our-menu">
-            ―― <?php echo $checkMenu ?>
+            ―― <a href="<?php echo $menuLink ?>"><?php echo $checkMenuText ?></a>
         </div>
     </div> 
     
