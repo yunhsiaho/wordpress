@@ -21,3 +21,10 @@ Text Domain: Team Pomodoro
     height: 60px; 
     border-radius: 7px;
 }
+.upnewsletter{
+  background-image: url('/wordpress/wp-content/themes/myTheme/assets/images/hachures-noires.png');
+  position: absolute;
+}
+.newsletter{
+    margin: 0em 7em 0 7em;
+}
