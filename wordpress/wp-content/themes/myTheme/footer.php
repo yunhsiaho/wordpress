@@ -22,7 +22,7 @@
 <div class="dev restaurant">
     <div class="shapeDivider mb-5"><?php dynamic_sidebar('footer-area-divider');?></div>
     <div class="row p-5 bg-dark text-white">
-      <div class="col-md-4 p-2">
+      <div class="col-md-4 p-5">
         <h3 class="text-left h1">Dev Restaurant</h3>
         <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium rerum repellendus obcaecati eum magni impedit, alias.</p>
       </div>
