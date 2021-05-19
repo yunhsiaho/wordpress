@@ -1,14 +1,15 @@
 <?php wp_footer();
 ?> 
 <!-- ROW NEWSLETTER -->
-<div class="upnewsletter">
-  <div class="row p-5">
-    <div class="col-md-12 p5">
-    <p></p>
+
+<div class="newsletter">
+  <div class="upnewsletter">
+    <div class="row p-5">
+      <div class="col-md-12 p5">
+    <!-- <p></p> -->
     </div>
   </div>
 </div>
-<div class="newsletter">
     <div class="row p-5 text-white">
       <div class="col-md-4 p-5">  
         <h3 class="joinNews p-2">Join Our Newsletter</h3>

@@ -26,6 +26,8 @@ Text Domain: Team Pomodoro
   width: 82.5%;
   height: auto;
   margin: 0em 7em 0 7em;
+  border: 1px solid red;
+  position: relative;
 }
 .newsletter{
     margin: 0em 7em 0 7em;
