@@ -19,16 +19,15 @@
       margin-left: auto;
       margin-right: auto; }
     * .banner .banner-text {
-      font-size: 5rem;
       border: 3px solid white;
-      width: 100%;
+      width: 47%;
       height: 100%; }
       * .banner .banner-text .for-happy-day {
         font-size: 3rem;
         margin: 1rem; }
       * .banner .banner-text .enjoy-happy-meal {
-        font-size: 4rem;
-        font-weight: 700;
+        font-size: 4.5rem;
+        font-weight: 600;
         margin: 1rem;
         margin-bottom: 3rem; }
       * .banner .banner-text .check-our-menu {
