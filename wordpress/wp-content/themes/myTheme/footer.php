@@ -4,11 +4,11 @@
 <div class="upnewsletter">
   <div class="row p-5">
     <div class="col-md-12 p5">
-    <p>ici se trouve l'image avec hachures qui superpose le joinNewslter</p>
+    <p></p>
     </div>
   </div>
 </div>
-<div class="newsletter bg-dark">
+<div class="newsletter">
     <div class="row p-5 text-white">
       <div class="col-md-4 p-5">  
         <h3 class="joinNews p-2">Join Our Newsletter</h3>
@@ -25,9 +25,9 @@
   </div>
  <!-- END OF ROW NEWSLETTER --> 
   <!-- ROW DEV RESTAURANT --> 
-<div class="dev restaurant">
+<div class="dev-restaurant">
     <!-- <div class="shapeDivider mb-5"><?php dynamic_sidebar('footer-area-divider');?></div> -->
-    <div class="row p-5 bg-dark text-white">
+    <div class="row p-5 text-white">
       <div class="col-md-6 p-5">
         <h3 class="text-left h1">Dev Restaurant</h3>
         <div class="col-md-6">
@@ -52,9 +52,10 @@
         </div>
       </div>
     </div>
+</div>
       <!-- END OF THE ICONS ROW -->
     <div class="opening-hours">
-        <div class="row p-5 d-flex bg-dark text-white">
+        <div class="row p-5 d-flex text-white">
         <div class="col-md-4 p-5">
             <h5 class="h5">Open hours</h5>
             <div class="gridHr">
@@ -77,7 +78,17 @@
       </div> 
       <!-- <div class="row w-100 mt-0 justify-content-center">
       </div> -->
+      <div class="d-flex justify-content-center">
+      <div class="text-center p-3">
+        <p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( '' ); ?>
+        <a href="<?php echo esc_url( __( '#', '' ) ); ?>">
+        <?php printf( esc_html__( '' ), '' ); ?>
+        </a>
+        </p>
+      </div>
     </div>
-  </div>   
+    </div>  
+  </div>  
+   
 </body>
 </html>

@@ -22,10 +22,18 @@ Text Domain: Team Pomodoro
     border-radius: 7px;
 }
 .upnewsletter{
-  background-image: url('/wordpress/wp-content/themes/myTheme/assets/images/hachures-noires.png');
-  width: 500px;
+  background: url('../assets/images/hachures-noires.png') no-repeat;
+  width: 82.5%;
   height: auto;
+  margin: 0em 7em 0 7em;
 }
 .newsletter{
     margin: 0em 7em 0 7em;
+    background-color: #292929;
+}
+.dev-restaurant{
+    background-color: #292929;
+}
+.opening-hours{
+    background-color: #292929;  
 }
