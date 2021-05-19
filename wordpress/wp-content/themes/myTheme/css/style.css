@@ -74,6 +74,44 @@ width: 80px;
     display: flex;
     justify-content: space-between;
 }
+.image{
+    width: 50px;
+    height: 50px;
+    margin: 5;
+}
+.socmed{
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    right:44px ;
+}
+.socmed li{
+    margin-right: 10px;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+.socmed li:nth-child(1){
+background-color:blue;
+}
+.socmed li:nth-child(2){
+    background-color:rgb(212, 46, 74);
+    }
+.socmed li:nth-child(3){
+        background-color:rgb(121, 121, 207);
+        }
+.socmed li:nth-child(4){
+background-color:rgb(9, 9, 66);
+}        
 .line{
     border:  white 1px solid;
+}
+.socialmedia{
+    display: flex;
+}
+.sec-block{
+    display: flex;
+    justify-content: center;
 }

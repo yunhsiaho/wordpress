@@ -64,7 +64,12 @@
 
 
 
-
+<div class="socialmedia">
+               <img src="./assets/svg/instagram.svg" alt="" class="socmed">
+               <img src="./assets/svg/facebook.svg" alt="" class="socmed">
+               <img src="./assets/svg/linkedin.svg" alt="" class="socmed">
+               <img src="./assets/svg/twitter.svg" alt="" class="socmed">
+             </div>
 
 /*
 Theme Name: WP_Restaurant

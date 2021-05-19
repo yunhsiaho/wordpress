@@ -9,7 +9,7 @@
   </div>
 </div>
 <div class="newsletter">
-    <div class="row p-5 text-white">
+    <div class="row text-white">
       <div class="col-md-4 p-5">  
         <h3 class="joinNews p-2">Join Our Newsletter</h3>
       </div>
@@ -30,11 +30,19 @@
           <div class="first-block">
             <div class="div"><h4>Dev restaurant</h4>
             <p>Lorem ipsum dolor sit amet, consectetur<br>
-             Voluptates similique cumque, quod<br> minus repellat libero!<br> Libero iusto </p>
+             Voluptates similique cumque, quod<br> minus repellat libero!<br> Libero iusto 
+            </p>
+            <ul class="socmed">
+              <li class="items"><i class="fab fa-facebook-f"></i></li>
+              <li class="items"><i class="fab fa-twitter"></i></li>
+              <li class="items"><i class="fab fa-instagram"></i></li>
+              <li class="items"><i class="fab fa-linkedin-in"></i></li>
+            </ul>
           </div>
             <div class="div"><h4>Open hours</h4>
             <p>Mondays   -------------Closed</p>
             <p>Tue - Fri --------------10am-12am</p>
+            <p>Sat - Sun -------------7am-1am</p>
             <p>Public Holidays  --------7am-1am</p>
           </div>
             <div class="div"><h4>Contact us</h4>
@@ -43,17 +51,22 @@
           </div>
             <div class="div"><h4>Instagram</h4>
             <div class="insta-images">
-              <img src="./assets/images/asoggetti-qJjXwi2zNSE-unsplash.jpg" alt="">
-              <img src="./assets/images/asoggetti-qJjXwi2zNSE-unsplash.jpg" alt="">
-              <img src="./assets/images/asoggetti-qJjXwi2zNSE-unsplash.jpg" alt=""> <img src="./assets/images/asoggetti-qJjXwi2zNSE-unsplash.jpg" alt="">
-              <img src="./assets/images/asoggetti-qJjXwi2zNSE-unsplash.jpg" alt="">
-              <img src="./assets/images/asoggetti-qJjXwi2zNSE-unsplash.jpg" alt="">
+              <div class="firstblockimage">
+                <img class="image" src="https://images.unsplash.com/photo-1575808142341-e39853744dbd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=542&q=80" alt="">
+                <img class="image" src="https://images.unsplash.com/photo-1575808142341-e39853744dbd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=542&q=80" alt="">
+                <img class="image" src="https://images.unsplash.com/photo-1575808142341-e39853744dbd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=542&q=80" alt="">
+              </div>
+              <div>
+              <img class="image" src="https://images.unsplash.com/photo-1575808142341-e39853744dbd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=542&q=80" alt="">
+              <img class="image" src="https://images.unsplash.com/photo-1575808142341-e39853744dbd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=542&q=80" alt="">
+              <img class="image" src="https://images.unsplash.com/photo-1575808142341-e39853744dbd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=542&q=80" alt="">
+              </div>
             </div>
           </div>
           </div>
           <hr class="line">
           <div class="sec-block">
-            <p>&copy</p>
+            <p>&copy <?php echo date( 'Y' ); ?> All Right Reserved. Designed by Devdesign studio </p>
           </div>
       </div>
      
