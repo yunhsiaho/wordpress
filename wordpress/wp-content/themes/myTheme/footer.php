@@ -24,7 +24,11 @@
     </div>
   </div>
  <!-- END OF ROW NEWSLETTER --> 
-  <!-- ROW DEV RESTAURANT --> 
+  <!-- ROW DEV RESTAURANT -->      
+    <!-- END OF THE ICONS ROW -->
+    <div class="secbanner">
+
+    </div>
     <footer class="footer">
       <div class="container">
           <div class="first-block">
@@ -40,13 +44,14 @@
             </ul>
           </div>
             <div class="div"><h4>Open hours</h4>
-            <p>Mondays   -------------Closed</p>
-            <p>Tue - Fri --------------10am-12am</p>
-            <p>Sat - Sun -------------7am-1am</p>
-            <p>Public Holidays  --------7am-1am</p>
+            <p><i class="far fa-clock"></i></i>  Mondays   -------------Closed</p>
+            <p><i class="far fa-clock"></i>  Tue - Fri --------------10am-12am</p>
+            <p><i class="far fa-clock"></i>  Sat - Sun -------------7am-1am</p>
+            <p><i class="far fa-clock"></i>  Public Holidays  --------7am-1am</p>
           </div>
             <div class="div"><h4>Contact us</h4>
-            <p>+(123) xxx-xxx</br>Rue de Mulhouse,</br>36 4020 Liège Belgium <p>
+            <p> <i class="fal fa-phone-alt"></i> +(123) xxx-xxx</br> 
+            <i class="far fa-street-view"></i> Rue de Mulhouse, 36</br> 4020 Liège Belgium <p>
            
           </div>
             <div class="div"><h4>Instagram</h4>
@@ -69,8 +74,11 @@
             <p>&copy <?php echo date( 'Y' ); ?> All Right Reserved. Designed by Devdesign studio </p>
           </div>
       </div>
-     
-    </footer>      
-    <!-- END OF THE ICONS ROW -->
-</body>
-</html>
+  
+    </footer>   
+  
+  
+  </body>
+
+
+  </html>
