@@ -16,10 +16,11 @@
     <!-- <h1><?php bloginfo('name'); ?></h1> 
     <h1><?php echo "test"; ?></h1>  -->
 <header>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="dev-title">
-                <a href="http://localhost">DEV RESTAURANT</a>
+                <a href="http://localhost"><?php bloginfo('name'); ?></a>
+                
             </div>
             <?php
             wp_nav_menu( array(

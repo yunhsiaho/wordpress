@@ -6,43 +6,21 @@ Author:hsia
 * {
   font-family: 'Poppins', sans-serif;
   color: white; }
-  * .banner {
-    position: relative;
-    text-align: left;
+  * .for-happy-day {
+    font-size: 3rem;
+    margin: 1rem; }
+  * .enjoy-happy-meal {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 1rem;
+    margin-bottom: 3rem; }
+  * .check-our-menu a {
     color: white;
-    z-index: 1; }
-    * .banner .banner-text {
-      font-size: 5rem;
-      margin-top: 1rem;
-      margin-left: 17rem;
-      width: 100%;
-      height: 100%; }
-      * .banner .banner-text .for-happy-day {
-        font-size: 3rem;
-        margin: 1rem; }
-      * .banner .banner-text .enjoy-happy-meal {
-        font-size: 4rem;
-        font-weight: 700;
-        margin: 1rem;
-        margin-bottom: 3rem; }
-      * .banner .banner-text .check-our-menu {
-        margin: 0.8rem;
-        font-size: 1rem; }
-        * .banner .banner-text .check-our-menu a {
-          color: white;
-          text-decoration: none;
-          padding: 10px;
-          transition: 0.5s; }
-        * .banner .banner-text .check-our-menu :hover {
-          color: black;
-          background-color: white;
-          border-radius: 30px;
-          text-decoration: none; }
-    * .banner img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1; }
+    text-decoration: none;
+    margin: 1rem; }
+    * .check-our-menu a :hover {
+      color: white;
+      text-decoration: none; }
   * .block-1 {
     display: flex;
     flex-direction: column;
@@ -58,6 +36,15 @@ Author:hsia
       padding-right: 3rem;
       padding-top: 2rem;
       padding-bottom: 2rem; }
+  * .banner {
+    position: relative;
+    text-align: center;
+    color: white; }
+    * .banner img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1; }
 
 .row {
   color: white;

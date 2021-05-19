@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch wordpress/wp-content/themes/myTheme/_src/scss --output style.css --source-map true"
+    "scss": "node-sass --watch wordpress/wp-content/themes/myTheme/_src/scss --output wordpress/wp-content/themes/myTheme/_src/css --source-map true"
     },
   "repository": {
     "type": "git",

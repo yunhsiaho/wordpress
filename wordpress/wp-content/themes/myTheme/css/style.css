@@ -11,31 +11,69 @@ Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, 
 Text Domain: Team Pomodoro
 */
 
-.subscribe-btn{
+/* .subscribe-btn{
     margin-left: 45%;
+    height: 60px;
+    border-radius: 7px;
+    width: 100px;
+} */
+.bouton{
+    width: 100px;
+    margin-left: 170px;
+    margin-top: -6;
     height: 60px;
     border-radius: 7px;
 }
 .email-field{
-    margin-left: 20%;
+    /* margin-left: 20%; */
     height: 60px; 
     border-radius: 7px;
+}
+.email{
+width: 80px;
 }
 .upnewsletter{
   background: url('../assets/images/hachures-noires.png') no-repeat;
   width: 82.5%;
   height: auto;
   margin: 0em 7em 0 7em;
-  border: 1px solid red;
   position: relative;
+  top: 50;
 }
 .newsletter{
     margin: 0em 7em 0 7em;
+    /* width: 80%; */
     background-color: #292929;
 }
-.dev-restaurant{
-    background-color: #292929;
+
+
+.form{
+    display: flex;
 }
-.opening-hours{
-    background-color: #292929;  
+.joinNews{
+    font-size: 50px ;
+    font-weight:500;
+}
+
+.banner{
+    position: absolute;
+    /* top: 5; */
+    width: 100%;
+    background: url('../assets/images/hachures-noires.png') no-repeat;
+    margin-bottom: 50px;
+
+}
+
+.footer{
+    width: 100%;
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+}
+.first-block{
+    display: flex;
+    justify-content: space-between;
+}
+.line{
+    border:  white 1px solid;
 }
