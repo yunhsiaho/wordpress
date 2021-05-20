@@ -1,50 +1,61 @@
 *{
     font-family: 'Poppins', sans-serif;
-    color:white;
+    // overflow-x: hidden;
+    // background-color: lightcoral;
     .banner{
         text-align: left;
         color: white;
         position:relative;
         background-color: none;
-        
-        border:3px solid yellow;
-        img{
+        // border:3px solid yellow;
+        .backgound-image{
             position: absolute;
             top:0;
             left:0;
+            z-index:-2;
+            height:100%;
+            width:100%;
+        }
+        .backgound-deco{
+            position: relative;
+            margin-top:15%;
             z-index:-1;
         }
         .banner-row{
-            border:3px solid lightgreen;
+            // border:3px solid lightgreen;
             width:80%;
             z-index:1;
             margin-left:auto;
             margin-right:auto;
         }
         .banner-text{
-            border:3px solid white;
+            // border:3px solid white;
             width:47%;
             height:100%;
-            
+            background-color: transparent;
             .for-happy-day{
                 font-size: 3rem;
                 margin:1rem;
+                background-color: transparent;
+
             }
             .enjoy-happy-meal{
                 font-size: 4.5rem;
                 font-weight: 600;
                 margin:1rem;
-                margin-bottom:3rem;
+                margin-bottom:3rem;            
+                background-color: transparent;
+
             }
             .check-our-menu{
                 margin:0.8rem;
-                font-size:1rem;                
+                font-size:1rem;   
                 a{
                     color:white;
                     // background-color: black;
                     text-decoration: none;
                     padding:10px;
-                    transition: 0.5s;
+                    transition: 1s;
                 }
                 :hover{
                     color:black;
@@ -57,25 +68,17 @@
         }
         
         
-    }   
-    .block-1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin:2rem;
-        border:2px solid red;
-        text-align:center;
-        .col-3{
-            border-radius: 30px 30px 0px 0px;
-            border:1px solid black;
-            margin:1rem;
-            padding-left:3rem;
-            padding-right:3rem;
-            padding-top:2rem;
-            padding-bottom:2rem;
-        }
     } 
-    
-    
-    
+    .three-column-row{
+        display:flex;
+        justify-content: center;
+        align-content:center;
+        .three-column{
+            color:black;
+            z-index:2;
+            border:1px solid red;
+            margin:1rem;
+            text-align: center;
+        }
+    }  
 }

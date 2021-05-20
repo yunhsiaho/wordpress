@@ -51,3 +51,6 @@ function register_theme_menus() {
   );
 };
 add_action( 'init', 'register_theme_menus' );
+//img size
+add_image_size('custom_img', 1920, 1080, true);
+

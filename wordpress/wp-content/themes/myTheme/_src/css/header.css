@@ -1,10 +1,8 @@
 header {
-  border: 3px solid lightcoral;
   width: 100%;
   height: 100%; }
   header .header-row {
     color: white;
-    border: 1px solid gray;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -21,25 +19,21 @@ header {
         header .header-row .dev-title a :hover {
           color: white;
           text-decoration: none; }
-    header .header-row .menu-mymenu-container {
-      border: 2px solid green; }
-      header .header-row .menu-mymenu-container .my-nav {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        border: 2px solid red;
-        width: 100%; }
-        header .header-row .menu-mymenu-container .my-nav li {
-          margin: 1rem;
-          border: 2px solid pink; }
-          header .header-row .menu-mymenu-container .my-nav li a {
+    header .header-row .menu-mymenu-container .my-nav {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      width: 100%; }
+      header .header-row .menu-mymenu-container .my-nav li {
+        margin: 1rem; }
+        header .header-row .menu-mymenu-container .my-nav li a {
+          color: white;
+          text-decoration: none; }
+          header .header-row .menu-mymenu-container .my-nav li a :hover {
             color: white;
             text-decoration: none; }
-            header .header-row .menu-mymenu-container .my-nav li a :hover {
-              color: white;
-              text-decoration: none; }
 
 /*# sourceMappingURL=header.css.map */
