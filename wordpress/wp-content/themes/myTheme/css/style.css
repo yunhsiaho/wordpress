@@ -35,14 +35,14 @@ width: 80px;
 .upnewsletter{
   background: url('../assets/images/hachures-noires.png') no-repeat;
   height: auto;
-  margin: 0em 7em 0 7em;
+  margin: 0em 7em 0 11em;
   position: relative;
   top: 50;
   width: 69.7%;
 
 }
 .newsletter{
-    margin: 0em 7em 0 7em;
+    margin: 0em 7em 0 11em;
     /* width: 80%; */
     background-color: #292929;
     position: absolute;
