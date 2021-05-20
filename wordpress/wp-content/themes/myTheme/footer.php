@@ -26,14 +26,12 @@
  <!-- END OF ROW NEWSLETTER --> 
   <!-- ROW DEV RESTAURANT -->      
     <!-- END OF THE ICONS ROW -->
-    <div class="secbanner">
-
-    </div>
+    <div class="secbanner"></div>
     <footer class="footer">
       <div class="container">
           <div class="first-block">
             <div class="div"><h4>Dev restaurant</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur<br>
+            <p class="p-sizesmall">Lorem ipsum dolor sit amet, consectetur<br>
              Voluptates similique cumque, quod<br> minus repellat libero!<br> Libero iusto 
             </p>
             <ul class="socmed">
@@ -44,14 +42,15 @@
             </ul>
           </div>
             <div class="div"><h4>Open hours</h4>
-            <p><i class="far fa-clock"></i></i>  Mondays   -------------Closed</p>
-            <p><i class="far fa-clock"></i>  Tue - Fri --------------10am-12am</p>
-            <p><i class="far fa-clock"></i>  Sat - Sun -------------7am-1am</p>
-            <p><i class="far fa-clock"></i>  Public Holidays  --------7am-1am</p>
+            <p class="p-sizesmall><i class="far fa-clock"></i></i>  Mondays   -------------Closed</p>
+            <p class="p-sizesmall><i class="far fa-clock"></i>  Tue - Fri --------------10am-12am</p>
+            <p class="p-sizesmall><i class="far fa-clock"></i>  Sat - Sun -------------7am-1am</p>
+            <p class="p-sizesmall><i class="far fa-clock"></i>  Public Holidays  --------7am-1am</p>
           </div>
-            <div class="div"><h4>Contact us</h4>
-            <p> <i class="fal fa-phone-alt"></i> +(123) xxx-xxx</br> 
-            <i class="far fa-street-view"></i> Rue de Mulhouse, 36</br> 4020 Liège Belgium <p>
+            <div><h4>Contact us</h4>
+            <p class="p-sizesmall> <i class="fal fa-phone-alt"></i>+(123) xxx-xxx</br> 
+            <i class="far fa-street-view"></i> Rue de Mulhouse, 36</br> <span class="postcode"> 4020 Liège</span></br> <span class="postcode">Belgium</span><p>
+            <p><i class="far fa-envelope-open"></i><span class="">0devdesign.studio@gmail.com</span></p>
            
           </div>
             <div class="div"><h4>Instagram</h4>
