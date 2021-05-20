@@ -34,16 +34,19 @@ width: 80px;
 }
 .upnewsletter{
   background: url('../assets/images/hachures-noires.png') no-repeat;
-  width: 82.5%;
   height: auto;
   margin: 0em 7em 0 7em;
   position: relative;
   top: 50;
+  width: 69.7%;
+
 }
 .newsletter{
     margin: 0em 7em 0 7em;
     /* width: 80%; */
     background-color: #292929;
+    position: absolute;
+    z-index: 3;
 }
 
 
@@ -57,8 +60,7 @@ width: 80px;
 .secbanner{
     background: url('../assets/images/hachures-noires.png') no-repeat;
     width: 100%;
-    height: auto;
-    margin: 0em 7em 0 7em;
+    height:100px;
     position: relative;
     top: 50;
 }
@@ -69,7 +71,7 @@ width: 80px;
     background-color: #292929;
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 221px;
 }
 .first-block{
     display: flex;

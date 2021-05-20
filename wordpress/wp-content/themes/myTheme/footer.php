@@ -28,8 +28,8 @@
     <!-- END OF THE ICONS ROW -->
     <div class="secbanner"></div>
     <footer class="footer">
-      <div class="container">
-          <div class="first-block">
+        <div class="container">
+            <div class="first-block">
             <div class="div"><h4>Dev restaurant</h4>
             <p class="p-sizesmall">Lorem ipsum dolor sit amet, consectetur<br>
              Voluptates similique cumque, quod<br> minus repellat libero!<br> Libero iusto 
@@ -69,8 +69,8 @@
           </div>
           </div>
           <hr class="line">
-          <div class="sec-block">
-            <p>&copy <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. All Right Reserved.                 Designed by Devdesign Studio </p>
+          <div class="sec-block p-sizesmall">
+            <p>&copy <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. All Right Reserved.                   Designed by Devdesign Studio </p>
           </div>
       </div>
   
