@@ -42,15 +42,15 @@
             </ul>
           </div>
             <div class="div"><h4>Open hours</h4>
-            <p class="p-sizesmall><i class="far fa-clock"></i></i>  Mondays   -------------Closed</p>
-            <p class="p-sizesmall><i class="far fa-clock"></i>  Tue - Fri --------------10am-12am</p>
-            <p class="p-sizesmall><i class="far fa-clock"></i>  Sat - Sun -------------7am-1am</p>
-            <p class="p-sizesmall><i class="far fa-clock"></i>  Public Holidays  --------7am-1am</p>
+            <p class="p-sizesmall"><i class="far fa-clock"></i></i>  Mondays   -------------Closed</p>
+            <p class="p-sizesmall"><i class="far fa-clock"></i>  Tue - Fri --------------10am-12am</p>
+            <p class="p-sizesmall"><i class="far fa-clock"></i>  Sat - Sun -------------7am-1am</p>
+            <p class="p-sizesmall"><i class="far fa-clock"></i>  Public Holidays  --------7am-1am</p>
           </div>
             <div><h4>Contact us</h4>
-            <p class="p-sizesmall> <i class="fal fa-phone-alt"></i>+(123) xxx-xxx</br> 
+            <p class="p-sizesmall"><i class="fal fa-phone-alt"></i>+(123) xxx-xxx</br> 
             <i class="far fa-street-view"></i> Rue de Mulhouse, 36</br> <span class="postcode"> 4020 Liège</span></br> <span class="postcode">Belgium</span><p>
-            <p><i class="far fa-envelope-open"></i><span class="">0devdesign.studio@gmail.com</span></p>
+            <p class="p-sizesmall"><i class="far fa-envelope-open"></i><span class=""> devdesign.studio@gmail.com</span></p>
            
           </div>
             <div class="div"><h4>Instagram</h4>
@@ -70,7 +70,7 @@
           </div>
           <hr class="line">
           <div class="sec-block">
-            <p>&copy <?php echo date( 'Y' ); ?> All Right Reserved. Designed by Devdesign studio </p>
+            <p>&copy <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. All Right Reserved.                 Designed by Devdesign Studio </p>
           </div>
       </div>
   

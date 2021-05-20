@@ -37,6 +37,12 @@ function style_log(){
 }
 add_action('wp_enqueue_scripts','style_log');
 
+// This will activate the ACF in my Dashbord
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
 
 //display menu in WP dashboard
 add_theme_support('menus');
