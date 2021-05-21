@@ -76,9 +76,27 @@
         .three-column{
             color:black;
             z-index:2;
-            border:1px solid red;
+            border:1px solid black;
+            border-radius: 50px 50px 0px 0px;
+            
             margin:1rem;
             text-align: center;
+            padding:2rem;
+            img{
+                background-color: white;
+                margin:10px;
+
+            }
+            h5{
+                background-color: white;
+                margin:10px;
+                font-weight: 600;
+            }
+            p{
+                background-color: white;
+                margin:10px;
+                font-weight: 400;
+            }
         }
     }  
 }

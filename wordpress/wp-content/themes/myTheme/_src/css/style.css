@@ -60,9 +60,22 @@ Author:hsia
     * .three-column-row .three-column {
       color: black;
       z-index: 2;
-      border: 1px solid red;
+      border: 1px solid black;
+      border-radius: 50px 50px 0px 0px;
       margin: 1rem;
-      text-align: center; }
+      text-align: center;
+      padding: 2rem; }
+      * .three-column-row .three-column img {
+        background-color: white;
+        margin: 10px; }
+      * .three-column-row .three-column h5 {
+        background-color: white;
+        margin: 10px;
+        font-weight: 600; }
+      * .three-column-row .three-column p {
+        background-color: white;
+        margin: 10px;
+        font-weight: 400; }
 
 header {
   width: 100%;
