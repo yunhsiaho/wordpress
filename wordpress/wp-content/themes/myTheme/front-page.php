@@ -11,7 +11,8 @@
     $menuLink = get_field('check_our_menu');
     $checkMenuText = get_field('check_menu_text');
 
-    
+    // $img = get_sub_field('img');
+    // $imgSvg = $img['sizes']['medium'];
 
 ?>
 <div class="container-fluid banner"> 
@@ -20,7 +21,6 @@
     <?php get_header(); ?>       
     <div class="banner-text">
         <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
-        
         <p class="for-happy-day"><?php echo $text ?></p>
         <p class="enjoy-happy-meal"><?php echo $text2 ?></p>
         <div class="check-our-menu">
@@ -34,29 +34,29 @@
 
 <section>
     <div class="container-fluid">
-        <?php if(have_rows('content')): ?>
-                <?php while(have_rows('content')):the_row(); ?>
-                <?php if(get_row_layout() == 'column_section'):?>
-                
-                    <div class="row three-column-row">
-                    <?php if(have_rows('content')): ?>
-                    <?php while(have_rows('content')):the_row(); 
-                        $forImg = get_sub_fields('img');
-                        $imgSize = $forImg['sizes']['medium'];
-                        ?>
-                        <div class="col-3 three-column">
-                        in column
-                        <img src=<?php echo $imgSize ?>/>
-                        <!-- <img src='http://localhost/wp-content/uploads/2021/05/quality-food.svg'> -->
-                        <h5><?php echo $column['title'] ?></h5>
-                        <p><?php echo $column['content'] ?></p>
-                        </div> 
-                        <?php endwhile; ?>
+        <div class="row three-column-row">
+        <?php if(have_rows('content_one')):  ?>
+                <?php while(have_rows('content_one')): the_row();?>
+                    <?php if(get_row_layout() == 'column_section_one'):?>
+                        <?php if(have_rows('column_sub')):?>
+                            <?php while(have_rows('column_sub')): the_row();?>
+                                <?php $img_card = get_sub_field('img');
+                                    $title_card = get_sub_field('title');
+                                    $content_card = get_sub_field('content_card');
+                                    $imgCardSize = $img_card['sizes']['medium'];
+                                ?>
+                                    <!-- <div class="col-3 three-column">
+                                        <img src=<?php echo $imgCardSize; ?>/>
+                                        <h5><?php echo $title_card; ?></h5>
+                                        <p><?php echo $content_card; ?></p>
+                                    </div> -->
+                                    anything
+                            <?php endwhile;?>
                         <?php endif; ?>
-                    </div>
-                <?php endif; ?>
-            <?php endwhile; ?>
+                    <?php endif; ?>
+                <?php endwhile; ?>
         <?php endif; ?>
+        </div>
     </div>
 </section>
 

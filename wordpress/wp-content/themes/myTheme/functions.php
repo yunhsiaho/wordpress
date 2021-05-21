@@ -29,14 +29,20 @@ add_filter('use_block_editor_for_post_type', '__return_false', 10);
 
 //for active css
 function style_log(){
-  wp_register_style('boostrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
-  wp_enqueue_style('boostrap');
+  wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
+  wp_enqueue_style('bootstrap');
 
     wp_register_style('style', get_template_directory_uri().'/_src/css/style.css',array(),false, 'all');
     wp_enqueue_style('style');
 }
 add_action('wp_enqueue_scripts','style_log');
 
+// This will activate the ACF in my Dashbord
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
 
 //display menu in WP dashboard
 add_theme_support('menus');
