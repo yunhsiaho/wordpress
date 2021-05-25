@@ -35,22 +35,21 @@
 <section>
     <div class="container-fluid">
         <div class="row three-column-row">
-        <?php if(have_rows('content_one')):  ?>
-                <?php while(have_rows('content_one')): the_row();?>
-                    <?php if(get_row_layout() == 'column_section_one'):?>
-                        <?php if(have_rows('column_sub')):?>
-                            <?php while(have_rows('column_sub')): the_row();?>
-                                <?php $img_card = get_sub_field('img');
+        <?php if(have_rows('content_first')):  ?>
+                <?php while(have_rows('content_first')): the_row();?>
+                    <?php if(get_row_layout() == 'content_section_first'):?>
+                        <?php if(have_rows('columns')):?>
+                            <?php while(have_rows('columns')): the_row();?>
+                                <?php $img_card = get_sub_field('image');
                                     $title_card = get_sub_field('title');
-                                    $content_card = get_sub_field('content_card');
-                                    $imgCardSize = $img_card['sizes']['medium'];
+                                    $content_card = get_sub_field('text');
+                                    $imgCardSize = $img_card['sizes']['large'];
                                 ?>
-                                    <!-- <div class="col-3 three-column">
-                                        <img src=<?php echo $imgCardSize; ?>/>
+                                    <div class="col-3 three-column">
+                                        <img src=<?php echo $imgCardSize; ?>>
                                         <h5><?php echo $title_card; ?></h5>
                                         <p><?php echo $content_card; ?></p>
-                                    </div> -->
-                                    anything
+                                    </div>                                   
                             <?php endwhile;?>
                         <?php endif; ?>
                     <?php endif; ?>
@@ -60,6 +59,30 @@
     </div>
 </section>
 
-
+<section>
+    <div class="container-fluid">
+        <div class="row">
+        <?php if(have_rows('picture_content')):  ?>
+                <?php while(have_rows('picture_content')): the_row();?>
+                    <?php if(get_row_layout() == 'picture_content_column'):?>
+                                <?php $img_chef = get_sub_field('chef_img');
+                                    $imgChefSize = $img_chef['sizes']['large'];
+                                    $title1_chef = get_sub_field('picture_content_column_title1');
+                                    $title2_chef = get_sub_field('picture_content_column_title2');
+                                    $title3_chef = get_sub_field('picture_content_column_title3');
+                                    $title_txt_chef = get_sub_field('picture_content_column_txt');
+                                    $title_title_chef = get_sub_field('picture_content_column_title_chef');
+                                    $title_chef = get_sub_field('picture_content_column_chef');
+                                ?>
+                                    <div class="chef">
+                                        <img src=<?php echo $imgChefSize; ?>>
+                                        <p><?php echo $title1_chef; ?></p>
+                                    </div>                                   
+                    <?php endif; ?>
+                <?php endwhile; ?>
+        <?php endif; ?>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>
