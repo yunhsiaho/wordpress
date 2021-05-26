@@ -61,28 +61,53 @@
 
 <section>
     <div class="container-fluid">
-        <div class="row">
         <?php if(have_rows('picture_content')):  ?>
-                <?php while(have_rows('picture_content')): the_row();?>
-                    <?php if(get_row_layout() == 'picture_content_column'):?>
-                                <?php $img_chef = get_sub_field('chef_img');
-                                    $imgChefSize = $img_chef['sizes']['large'];
-                                    $title1_chef = get_sub_field('picture_content_column_title1');
-                                    $title2_chef = get_sub_field('picture_content_column_title2');
-                                    $title3_chef = get_sub_field('picture_content_column_title3');
-                                    $title_txt_chef = get_sub_field('picture_content_column_txt');
-                                    $title_title_chef = get_sub_field('picture_content_column_title_chef');
-                                    $title_chef = get_sub_field('picture_content_column_chef');
-                                ?>
-                                    <div class="chef">
-                                        <img src=<?php echo $imgChefSize; ?>>
-                                        <p><?php echo $title1_chef; ?></p>
-                                    </div>                                   
-                    <?php endif; ?>
-                <?php endwhile; ?>
+            <?php while(have_rows('picture_content')): the_row();?>
+                <?php if(get_row_layout() == 'picture_content_column'):?>
+                    <?php $img_chef = get_sub_field('chef_img');
+                        $imgChefSize = $img_chef['sizes']['large'];
+                        $title1_chef = get_sub_field('picture_content_column_title1');
+                        $title2_chef = get_sub_field('picture_content_column_title2');
+                        $title3_chef = get_sub_field('picture_content_column_title3');
+                        $title_txt_chef = get_sub_field('picture_content_column_txt');
+                        $title_txt_chef2 = get_sub_field('picture_content_column_txt2');
+                        $title_title_chef = get_sub_field('picture_content_column_title_chef');
+                        $title_chef = get_sub_field('picture_content_column_chef');
+                    ?>
+                    <div class="row chef">                                
+                        <div class="chef-img col-6">
+                            <img src=<?php echo $imgChefSize; ?>>
+                        </div>    
+                        <div class="chef-text col-5">
+                            <p class='chef-1'><?php echo $title1_chef; ?></p>
+                            <p class='chef-2'><?php echo $title2_chef; ?></p>
+                            <p class='chef-3'><?php echo $title3_chef ; ?></p>
+                            <p class='chef-txt'><?php echo $title_txt_chef; ?></p>
+                            <p class='chef-txt'><?php echo $title_txt_chef2; ?></p>
+                            <p class='chef-title'><?php echo $title_title_chef; ?></p>
+                            <p class='chef-chef'><?php echo $title_chef; ?></p>
+                        </div>   
+                    </div>                                    
+                <?php endif; ?>
+            <?php endwhile; ?>
         <?php endif; ?>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+        <h1>Discover our franchise</h1>
+        <h1><b>OUR RESTAURANTS</b></h1>
+
         </div>
     </div>
 </section>
+
+
+
+
+
+
 
 <?php get_footer(); ?>

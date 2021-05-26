@@ -103,4 +103,50 @@
             }
         }
     }  
+    .chef{
+        padding-left:5rem;
+        padding-right: 5rem;
+        .chef-img{
+            margin:10rem;
+            z-index:0;
+        }
+        .chef-text{
+            line-height: 1;
+            z-index:1;
+            background-color: white;
+            box-shadow: 3px 10px 25px rgba(128, 128, 128, 0.5);
+            // border:1px solid black;
+            height:32rem;
+            width:40rem;
+            margin-top:21rem;
+            margin-left:-23rem;
+            padding-top:5rem;
+            padding-left:6rem;
+            padding-bottom:5rem;
+            padding-right:6rem;
+            .chef-1{
+                font-size:40px;
+            }
+            .chef-2{
+                font-size:50px;
+                font-weight:600;
+            }
+            .chef-3{
+                font-size:15px;
+                font-weight:600;
+            }
+            .chef-txt{
+                font-size:15px;
+            }
+            .chef-title{
+                margin-top:3rem;
+                font-size:12px;
+                font-weight:600;
+            }
+            .chef-chef{
+                font-size:40px;
+            }
+        }
+    }
+    
 }
