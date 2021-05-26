@@ -3,5 +3,9 @@ Theme Name:myTheme
 Version: 1.0
 Author:hsia
 */
-@import 'body.scss';
+@import 'body_front.scss';
 @import 'header.scss';
+.container-fluid{
+    padding-left: 0px;
+    padding-right:0px;
+}

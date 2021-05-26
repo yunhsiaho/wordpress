@@ -1,0 +1,114 @@
+* {
+  font-family: 'Poppins', sans-serif; }
+  * .banner {
+    text-align: left;
+    color: white;
+    position: relative;
+    background-color: none; }
+    * .banner .backgound-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+      height: 100%;
+      width: 100%; }
+    * .banner .backgound-deco {
+      position: relative;
+      margin-top: 15%;
+      z-index: -1;
+      width: 120%; }
+    * .banner .banner-row {
+      width: 80%;
+      z-index: 1;
+      margin-left: auto;
+      margin-right: auto; }
+    * .banner .banner-text {
+      width: 47%;
+      height: 100%;
+      background-color: transparent; }
+      * .banner .banner-text .for-happy-day {
+        font-size: 3rem;
+        margin: 1rem;
+        background-color: transparent; }
+      * .banner .banner-text .enjoy-happy-meal {
+        font-size: 4.5rem;
+        font-weight: 600;
+        margin: 1rem;
+        margin-bottom: 3rem;
+        background-color: transparent; }
+      * .banner .banner-text .check-our-menu {
+        margin: 0.8rem;
+        font-size: 1rem; }
+        * .banner .banner-text .check-our-menu a {
+          color: white;
+          text-decoration: none;
+          padding: 10px;
+          transition: 1s; }
+        * .banner .banner-text .check-our-menu :hover {
+          color: black;
+          background-color: white;
+          border-radius: 30px;
+          text-decoration: none; }
+  * .three-column-row {
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+    * .three-column-row .three-column {
+      color: black;
+      z-index: 2;
+      border-radius: 50px 50px 0px 0px;
+      box-shadow: 10px 10px 25px rgba(128, 128, 128, 0.1);
+      margin-top: -10rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      text-align: center;
+      padding: 1.5rem;
+      background-color: white; }
+      * .three-column-row .three-column img {
+        background-color: white;
+        margin: 10px; }
+      * .three-column-row .three-column h5 {
+        background-color: white;
+        margin: 10px;
+        font-weight: 600; }
+      * .three-column-row .three-column p {
+        background-color: white;
+        margin: 10px;
+        font-weight: 400; }
+  * .chef {
+    padding-left: 5rem;
+    padding-right: 5rem; }
+    * .chef .chef-img {
+      margin: 10rem;
+      z-index: 0; }
+    * .chef .chef-text {
+      line-height: 1;
+      z-index: 1;
+      background-color: white;
+      box-shadow: 3px 10px 25px rgba(128, 128, 128, 0.5);
+      height: 32rem;
+      width: 40rem;
+      margin-top: 21rem;
+      margin-left: -23rem;
+      padding-top: 5rem;
+      padding-left: 6rem;
+      padding-bottom: 5rem;
+      padding-right: 6rem; }
+      * .chef .chef-text .chef-1 {
+        font-size: 40px; }
+      * .chef .chef-text .chef-2 {
+        font-size: 50px;
+        font-weight: 600; }
+      * .chef .chef-text .chef-3 {
+        font-size: 15px;
+        font-weight: 600; }
+      * .chef .chef-text .chef-txt {
+        font-size: 15px; }
+      * .chef .chef-text .chef-title {
+        margin-top: 3rem;
+        font-size: 12px;
+        font-weight: 600; }
+      * .chef .chef-text .chef-chef {
+        font-size: 40px; }
+
+/*# sourceMappingURL=body_front.css.map */
