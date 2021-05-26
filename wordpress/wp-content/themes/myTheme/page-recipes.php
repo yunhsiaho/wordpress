@@ -12,9 +12,7 @@ $checkMenuText = get_field('check_menu_text');
 ?>
 
 <!-- Recipes page -->
-<div class="background-image">
-    
-</div>
+<div class="background-image"></div>
 <div class="container">
 
 <h1><?php the_title(); ?></h1>
@@ -24,6 +22,7 @@ $checkMenuText = get_field('check_menu_text');
 
 <!-- CREATING THE RECIPES SECTIONS -->
 <section class="rows">
+
     <div class="recipes-row">
         <?php if(have_rows('content_')):?>
 
@@ -37,9 +36,9 @@ $checkMenuText = get_field('check_menu_text');
 
         <?php endwhile;?>
 
-<?php endif;?>
+    <?php endif;?>
+    </div>
 </section>
-</div>
 
 
 <?php get_footer(); ?>
