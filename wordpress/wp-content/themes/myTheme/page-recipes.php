@@ -20,11 +20,26 @@ $checkMenuText = get_field('check_menu_text');
 <h1><?php the_title(); ?></h1>
 <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
 
-
-
-<?php endwhile; endif; ?>
 <img src="<?php echo $picture;?>" class="img-fluid"></img>
 
+<!-- CREATING THE RECIPES SECTIONS -->
+<section class="rows">
+    <div class="recipes-row">
+        <?php if(have_rows('content_')):?>
+
+        <?php while(have_rows('content_')): the_row();?>
+
+        <?php if (get_row_layout()=='section_'):?>
+
+            Yes it works!
+        <?php endif;?>
+
+
+        <?php endwhile;?>
+
+<?php endif;?>
+</section>
 </div>
+
 
 <?php get_footer(); ?>

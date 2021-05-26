@@ -4,16 +4,16 @@
 <div class="upnewsletter">
     <div class="row p-5">
       <div class="col-md-12">
-    <!-- <p></p> -->
+    <p></p>
     </div>
   </div>
 </div>
 <div class="newsletter">
     <div class="row text-white">
-      <div class="col-md-4 p-5">  
+      <div class="col-md-6 p-5">  
         <h3 class="joinNews p-2">Join Our Newsletter</h3>
       </div>
-      <div class="col-md-8 mt-5 justify-content-center align-items-center form">
+      <div class="col-md-6 mt-5 justify-content-center align-items-center form">
           <div class="row  justify-content-center email">
           <input class=" email-field" type="text" placeholder="Your Email Adress" class="">
           </div>
@@ -30,7 +30,8 @@
     <footer class="footer">
         <div class="container">
             <div class="first-block">
-            <div class="div"><h4>Dev restaurant</h4>
+            <div class="first-div">
+            <h4>Dev restaurant</h4>
             <p class="p-sizesmall">Lorem ipsum dolor sit amet, consectetur<br>
              Voluptates similique cumque, quod<br> minus repellat libero!<br> Libero iusto 
             </p>
