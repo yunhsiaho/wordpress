@@ -28,7 +28,7 @@
     <!-- END OF THE ICONS ROW -->
     <div class="secbanner"></div>
     <footer class="footer">
-        <div class="container">
+        <div class="container container-footer">
             <div class="first-block">
             <div class="first-div">
             <h4>Dev restaurant</h4>

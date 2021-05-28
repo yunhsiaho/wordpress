@@ -75,6 +75,7 @@
         display:flex;
         justify-content: center;
         align-content:center;
+        margin-bottom:3rem;
         .three-column{
             color:black;
             z-index:2;
@@ -104,22 +105,27 @@
         }
     }  
     .chef{
-        padding-left:5rem;
-        padding-right: 5rem;
+        padding:3rem;        
+        height:50rem;
+        width:100rem;
+        // border:1px solid red;
         .chef-img{
-            margin:10rem;
             z-index:0;
+            // border:1px solid green;
+            margin-left:6rem;
         }
         .chef-text{
+            // border:1px solid red;
+            position:absolute;
+            left:52rem;
+            top:80rem;
             line-height: 1;
             z-index:1;
             background-color: white;
             box-shadow: 3px 10px 25px rgba(128, 128, 128, 0.5);
             // border:1px solid black;
             height:32rem;
-            width:40rem;
-            margin-top:21rem;
-            margin-left:-23rem;
+            width:45rem;
             padding-top:5rem;
             padding-left:6rem;
             padding-bottom:5rem;
@@ -146,6 +152,58 @@
             .chef-chef{
                 font-size:40px;
             }
+        }
+    }
+    .resto-posts-con{
+        .resto-posts{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:5rem;
+            text-align: center;
+            // border:1px solid red;
+            .col-12 {
+                // border:1px solid green;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:3rem;
+                img{
+                    z-index:0;
+                }
+                .card{
+                width:40rem;
+                height:30rem;
+                z-index:1;
+                }
+                .card-left{
+                    margin-right:-10%;
+                }
+                .card-right{
+                    margin-left:-10%;
+                }
+            }
+            
+        }
+        p{
+            margin:2rem;
+        }
+        h1{
+            margin:2rem;
+        }
+        h2{
+            margin:2rem;
+        }
+        a{
+            margin-top:5rem;
+            color:white;
+            background-color: black;
+            font-weight:600;
+            text-decoration: none;
+            padding-left:2rem;
+            padding-right:2rem;
+            padding-top:1rem;
+            padding-bottom:1rem;
         }
     }
     

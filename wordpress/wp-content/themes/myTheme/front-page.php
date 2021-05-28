@@ -43,7 +43,7 @@
                                 <?php $img_card = get_sub_field('image');
                                     $title_card = get_sub_field('title');
                                     $content_card = get_sub_field('text');
-                                    $imgCardSize = $img_card['sizes']['large'];
+                                    $imgCardSize = $img_card['sizes']['custom_thumbnail'];
                                 ?>
                                     <div class="col-3 three-column">
                                         <img src=<?php echo $imgCardSize; ?>>
@@ -61,6 +61,7 @@
 
 <section>
     <div class="container-fluid">
+    <div class="row chef m-auto">
         <?php if(have_rows('picture_content')):  ?>
             <?php while(have_rows('picture_content')): the_row();?>
                 <?php if(get_row_layout() == 'picture_content_column'):?>
@@ -74,9 +75,8 @@
                         $title_title_chef = get_sub_field('picture_content_column_title_chef');
                         $title_chef = get_sub_field('picture_content_column_chef');
                     ?>
-                    <div class="row chef">                                
                         <div class="chef-img col-6">
-                            <img src=<?php echo $imgChefSize; ?>>
+                            <img src=<?php echo $imgChefSize; ?> class='img img-fluid'>
                         </div>    
                         <div class="chef-text col-5">
                             <p class='chef-1'><?php echo $title1_chef; ?></p>
@@ -86,20 +86,97 @@
                             <p class='chef-txt'><?php echo $title_txt_chef2; ?></p>
                             <p class='chef-title'><?php echo $title_title_chef; ?></p>
                             <p class='chef-chef'><?php echo $title_chef; ?></p>
-                        </div>   
-                    </div>                                    
-                <?php endif; ?>
-            <?php endwhile; ?>
-        <?php endif; ?>
+                        </div> 
+                    <?php endif; ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
     </div>
 </section>
 
 <section>
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid resto-posts-con border border-info p-auto text-center">
         <h1>Discover our franchise</h1>
         <h1><b>OUR RESTAURANTS</b></h1>
+        <div class="row resto-posts">
+            <?php 
+            $imgPost = get_field('first_photo_post');
+            $imgPostSize = $imgPost['sizes']['custom_small'];
+            $bigTitle = get_field('big_title_title');
+            $titlePost = get_field('title_post');
+            $textPost = get_field('text_post');
+            $linkPost = get_field('link_post');
+            $linkUrl = $linkPost['url'];
+            $linkTarget = $linkPost['target'] ? $linkPost['target']:'_self';
+            ?>
+            <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+            <div class="col-12 ">
+                <div class="card card-left">
+                    <div class="card-body">
+                        <h2><?php echo $bigTitle; ?></h2>
+                        <h1><b><?php echo $titlePost; ?></b></h1>
+                        <p><?php echo $textPost; ?></p>
+                        <?php if($linkPost): ?>
+                        <a href="<?php echo esc_url($linkUrl) ?>" target='<?php echo esc_attr($linkTarget); ?>'>More Info</a>
+                    <?php endif; ?>
+                    </div>
+                </div>
+                <img src="<?php echo $imgPostSize; ?>" class='img-fluid'>
+            </div>
+            <?php endwhile;endif; ?>
 
+            <?php 
+            $imgPost2 = get_field('second_photo_post');
+            $imgPostSize2 = $imgPost2['sizes']['custom_small'];
+            $bigTitle2 = get_field('second_big_title');
+            $titlePost2 = get_field('second_title_post');
+            $textPost2 = get_field('second_text_post');
+            $linkPost2 = get_field('second_link_post');
+            $linkUrl2 = $linkPost2['url'];
+            $linkTarget2 = $linkPost2['target'] ? $linkPost2['target']:'_self';
+            ?>
+            <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+            <div class="col-12">
+                    <img src="<?php echo $imgPostSize2; ?>" class='img-fluid'>
+                <div class="card card-right">
+                    <div class="card-body">
+                        <h2><?php echo $bigTitle2; ?></h2>
+                        <h1><b><?php echo $titlePost2; ?></b></h1>
+                        <p><?php echo $textPost2; ?></p>
+                        <?php if($linkPost2): ?>
+                        <a href="<?php echo esc_url($linkUrl2) ?>" target='<?php echo esc_attr($linkTarget2); ?>'>More Info</a>
+                    <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+            <?php endwhile;endif; ?>
+
+            <?php 
+            $imgPost3 = get_field('third_photo_post');
+            $imgPostSize3 = $imgPost3['sizes']['custom_small'];
+            $bigTitle3 = get_field('third_big_title');
+            $titlePost3 = get_field('third_title_post');
+            $textPost3 = get_field('third_text_post');
+            $linkPost3 = get_field('third_link_post');
+            $linkUrl3 = $linkPost3['url'];
+            $linkTarget3 = $linkPost3['target'] ? $linkPost3['target']:'_self';
+            ?>
+            <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+            <div class="col-12">
+                <div class="card card-left">
+                    <div class="card-body">
+                        <h2><?php echo $bigTitle3; ?></h2>
+                        <h1><b><?php echo $titlePost3; ?></b></h1>
+                        <p><?php echo $textPost3; ?></p>
+                        <?php if($linkPost3): ?>
+                        <a href="<?php echo esc_url($linkUrl3) ?>" target='<?php echo esc_attr($linkTarget3); ?>'>More Info</a>
+                    <?php endif; ?>
+                    </div>
+                </div>
+            
+                <img src="<?php echo $imgPostSize3; ?>" class='img-fluid'>
+            </div>
+            <?php endwhile;endif; ?>  
         </div>
     </div>
 </section>
