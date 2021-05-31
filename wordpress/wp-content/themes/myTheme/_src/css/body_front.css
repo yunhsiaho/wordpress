@@ -5,14 +5,14 @@
     color: white;
     position: relative;
     background-color: none; }
-    * .banner .backgound-image {
+    * .banner .background-image {
       position: absolute;
       top: 0;
       left: 0;
       z-index: -2;
       height: 100%;
       width: 100%; }
-    * .banner .backgound-deco {
+    * .banner .background-deco {
       position: relative;
       margin-top: 15%;
       z-index: -1;
@@ -113,42 +113,72 @@
         font-weight: 600; }
       * .chef .chef-text .chef-chef {
         font-size: 40px; }
-  * .resto-posts-con .resto-posts {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5rem;
+  * .resto-posts-con {
+    background-color: rgba(243, 236, 232, 0.3);
+    position: relative;
+    z-index: 1; }
+    * .resto-posts-con .resto-posts-con::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .4;
+      z-index: -1; }
+    * .resto-posts-con .resto-posts {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5rem;
+      text-align: center; }
+      * .resto-posts-con .resto-posts .col-12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem; }
+        * .resto-posts-con .resto-posts .col-12 img {
+          z-index: 0; }
+        * .resto-posts-con .resto-posts .col-12 .card {
+          width: 40rem;
+          height: 30rem;
+          z-index: 1; }
+        * .resto-posts-con .resto-posts .col-12 .card-left {
+          margin-right: -10%; }
+        * .resto-posts-con .resto-posts .col-12 .card-right {
+          margin-left: -10%; }
+    * .resto-posts-con p {
+      margin: 2rem; }
+    * .resto-posts-con h1 {
+      margin: 2rem; }
+    * .resto-posts-con h2 {
+      margin: 2rem; }
+    * .resto-posts-con a {
+      margin-top: 5rem;
+      color: white;
+      background-color: black;
+      font-weight: 600;
+      text-decoration: none;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+  * .gallery {
+    padding: 5rem;
     text-align: center; }
-    * .resto-posts-con .resto-posts .col-12 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 3rem; }
-      * .resto-posts-con .resto-posts .col-12 img {
-        z-index: 0; }
-      * .resto-posts-con .resto-posts .col-12 .card {
-        width: 40rem;
-        height: 30rem;
-        z-index: 1; }
-      * .resto-posts-con .resto-posts .col-12 .card-left {
-        margin-right: -10%; }
-      * .resto-posts-con .resto-posts .col-12 .card-right {
-        margin-left: -10%; }
-  * .resto-posts-con p {
-    margin: 2rem; }
-  * .resto-posts-con h1 {
-    margin: 2rem; }
-  * .resto-posts-con h2 {
-    margin: 2rem; }
-  * .resto-posts-con a {
-    margin-top: 5rem;
-    color: white;
-    background-color: black;
-    font-weight: 600;
-    text-decoration: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
+    * .gallery p {
+      margin: 2rem; }
+    * .gallery h1 {
+      margin: 2rem; }
+    * .gallery a {
+      margin-top: 10rem;
+      color: white;
+      background-color: black;
+      font-weight: 600;
+      text-decoration: none;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
 
 /*# sourceMappingURL=body_front.css.map */

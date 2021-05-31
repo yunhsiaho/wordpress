@@ -8,7 +8,7 @@
         position:relative;
         background-color: none;
         // border:3px solid yellow;
-        .backgound-image{
+        .background-image{
             position: absolute;
             top:0;
             left:0;
@@ -16,7 +16,7 @@
             height:100%;
             width:100%;
         }
-        .backgound-deco{
+        .background-deco{
             position: relative;
             margin-top:15%;
             z-index:-1;
@@ -155,6 +155,20 @@
         }
     }
     .resto-posts-con{
+        background-color:rgba(243, 236, 232, 0.3);
+        position: relative;
+        z-index: 1;
+        .resto-posts-con::after {
+            content: "";
+            position: absolute;
+            top: 0; 
+            left: 0;
+            width: 100%; 
+            height: 100%;  
+            opacity: .4; 
+            z-index: -1;
+
+        }
         .resto-posts{
             width: 80%;
             margin-left: auto;
@@ -206,5 +220,25 @@
             padding-bottom:1rem;
         }
     }
-    
+    .gallery{
+        padding:5rem;
+        text-align: center;
+        p{
+            margin:2rem;
+        }
+        h1{
+            margin:2rem;
+        }
+        a{
+            margin-top:10rem;
+            color:white;
+            background-color: black;
+            font-weight:600;
+            text-decoration: none;
+            padding-left:2rem;
+            padding-right:2rem;
+            padding-top:1rem;
+            padding-bottom:1rem;
+        }
+    }
 }

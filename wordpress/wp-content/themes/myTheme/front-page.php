@@ -10,13 +10,14 @@
 
     $menuLink = get_field('check_our_menu');
     $checkMenuText = get_field('check_menu_text');
-
-    // $img = get_sub_field('img');
-    // $imgSvg = $img['sizes']['medium'];
+    
+    $burger = get_field('burger_background');
+    $burgerBackground = $burger['sizes']['2048x2048'];
+    
 
 ?>
 <div class="container-fluid banner"> 
-        <img src=<?php echo $background ?> class="backgound-image img-fluid"/>
+        <img src=<?php echo $background ?> class="background-image img-fluid"/>
     <div class="row banner-row">
     <?php get_header(); ?>       
     <div class="banner-text">
@@ -29,7 +30,7 @@
         <?php endwhile; endif; ?>
     </div>
     </div>
-    <img src=<?php echo $backgroundDeco ?> class="backgound-deco img-fluid "/>
+    <img src=<?php echo $backgroundDeco ?> class="background-deco img-fluid "/>
 </div>
 
 <section>
@@ -95,7 +96,11 @@
 </section>
 
 <section>
-    <div class="container-fluid resto-posts-con border border-info p-auto text-center">
+    
+    <div class="container-fluid resto-posts-con p-auto text-center" 
+    style="background-image: url(<?php echo $burgerBackground ?>);">
+    <img src=<?php echo $backgroundDeco ?> class="background-deco img-fluid" style="transform: rotate(180deg);"/>
+    <!-- <img src=<?php echo $burgerBackground ?> class="background-image img-fluid"/>                     -->
         <h1>Discover our franchise</h1>
         <h1><b>OUR RESTAURANTS</b></h1>
         <div class="row resto-posts">
@@ -178,10 +183,38 @@
             </div>
             <?php endwhile;endif; ?>  
         </div>
+        <img src=<?php echo $backgroundDeco ?> class="background-deco img-fluid " />
     </div>
 </section>
 
+<section>
+<?php 
+    $photoGallery = get_field('photo_gallery') ;
+    
+    $gallery1 = get_field('gallery_title1') ;
+    $gallery2 = get_field('gallery_title2') ;
+    $galleryText = get_field('gallery_text') ;
+    $galleryButton = get_field('gallery_button') ;
 
+?>
+
+    <div class="container-fluid">
+        <div class="row m-auto  gallery">
+            <div class=" col-6">
+                    <img src=<?php echo $photoGallery[0]['sizes']['thumbnail']?> class='img-fluid m-2 col-5'>
+                    <img src=<?php echo $photoGallery[1]['sizes']['thumbnail']?> class='img-fluid m-2 col-5'>
+                    <img src=<?php echo $photoGallery[2]['sizes']['thumbnail']?> class='img-fluid m-2 col-5'>
+                    <img src=<?php echo $photoGallery[3]['sizes']['thumbnail']?> class='img-fluid m-2 col-5'>
+            </div>
+            <div class="col-6  ">
+            <h1><?php echo $gallery1 ?></h1>
+            <h1><b><?php echo $gallery2 ?></b></h1>
+            <p><?php echo $galleryText ?></p>
+            <a href=<?php echo $galleryButton ?>>VIEW THE FULL MENU</a>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
